@@ -19,13 +19,13 @@ The objective of this project was to deploy the T-Pot Community Edition on a clo
 ## Deployment Process
 
 ### Phase 1: Infrastructure & Provisioning
-I provisioned a fresh Linux VPS via Vultr. To ensure the honeypot was fully exposed to the public internet to attract malicious activity—while remaining strictly secure for my own administrative access—I configured the firewall rules as follows:
+I provisioned a fresh Linux VPS via Vultr. To ensure the honeypot was fully exposed to the public internet to attract malicious activity—while remaining strictly secure for my own administrative access, I configured the firewall rules as follows:
 
 | Action | Protocol | Port / Range | Source | Purpose |
 | :--- | :--- | :--- | :--- | :--- |
 | **Accept** | TCP | `1:65535` | `0.0.0.0/0` | Attract Attackers (All Ports) |
 | **Accept** | UDP | `1:65535` | `0.0.0.0/0` | Attract Attackers (All Ports) |
-| **Accept** | TCP | `64294:64297` | `[YOUR_MANAGEMENT_IP]` | Secure Admin & WebGUI Access |
+| **Accept** | TCP | `64294:64297` | `my personal IP` | Secure Admin & WebGUI Access |
 
 ### Phase 2: Installation
 Because the automated T-Pot installation script is restricted from running directly as the `root` user, I created a dedicated deployment user with sudo privileges:
