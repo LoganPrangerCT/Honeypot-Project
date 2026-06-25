@@ -107,10 +107,3 @@ After applying the SSL fix, the WebGUI became fully operational. I now have acce
 
 Within minutes of going live, the honeypot began capturing traffic. As seen in the collected logs, I observed multiple "Known Attackers" and "Mass Scanners" hitting various ports, primarily originating from global botnets. This highlights the constant background noise of the internet and the frequency of automated scanning.
 
-*Insert screenshots of the Attack Map and log table here.*
-
----
-
-## Disclaimer
-
-This project was conducted for educational purposes in a controlled environment.
