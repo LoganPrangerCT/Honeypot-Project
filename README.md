@@ -25,7 +25,7 @@ I started by provisioning a VPS through Vultr. To ensure the honeypot was expose
 | :----- | :------- | :------------ | :--------------------- | :------------------ |
 | Accept | TCP      | `1:65535`     | `0.0.0.0/0`            | Attract attackers   |
 | Accept | UDP      | `1:65535`     | `0.0.0.0/0`            | Attract attackers   |
-| Accept | TCP      | `64294:64297` | `[YOUR_MANAGEMENT_IP]` | Secure admin access |
+| Accept | TCP      | `64294:64297` | `[MY IP]` | Secure admin access |
 
 ### Phase 2: Installation
 
